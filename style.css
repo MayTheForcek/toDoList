@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #352f5b;
+    color: rgba(255, 255, 255, 0.75);
+    display: grid;
+    grid-template-columns: auto minmax(50%, 700px) auto;
+}
+
+.container {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+header>form {
+    width: 100%;
+}
+
+input[type=text],
+input[type=text]:focus {
+    border: none;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    width: 100%;
+    padding: 0.7rem;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+}
+
+.todo {
+    list-style-type: none;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.todo li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #423a6f;
+    padding: 0.7rem;
+    margin-bottom: 1px;
+}
+
+.add-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.add-form>label {
+    margin-bottom: 0.5rem;
+}
+
+.delete {
+    cursor: pointer;
+}
+
+
+/* .filtered {
+    display: none !important;
+} */
